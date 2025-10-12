@@ -1,0 +1,18 @@
+/// This file is the main entry point for the Sass styles of the site.
+
+@use "vendor";
+@use "theme";
+@use "parts/note";
+@use "parts/code";
+@use "parts/search";
+@use "parts/toc";
+@use "parts/latex";
+
+/// Globally defined CSS variables
+:root {
+  --bg-primary: #090909;
+  --accent: #7c5cff;
+  --search-border-color: #7c5cff;
+  --note-bg-dark: #090909;
+  --note-bg-light: #efefef;
+}
