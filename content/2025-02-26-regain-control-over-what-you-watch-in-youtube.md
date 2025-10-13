@@ -11,6 +11,8 @@ Make yourself a step from being lured by useless recommendations in YouTube with
 
 <!-- more -->
 
+> The instructions to install Invidious in this post are no longer supported by Invidious. Check on the official [documentation](https://docs.invidious.io/installation/#docker).
+
 ## Introduction
 
 In this post I'll show how to self-host Invidious with Docker, and configure FreeTube to use your Invidious Instance for best performance, enjoy ad-free videos and regain control over what you watch. While self-hosting Invidious is not mandatory, it allows you to watch YouTube videos without relying on the YouTube API to improve your privacy, and it does also give you some unique perks like accounts (but I'll not cover this).
