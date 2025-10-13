@@ -40,6 +40,6 @@ I could use these high volume platforms such as Twitter to get more visibility, 
 
 The reason why you would want to have a social media, is for the sole fact that us, human beings, require social interaction in some way. Nevertheless, it's far away from being the only way.
 
-I'm totally fine to keep all my thoughts isolated in a unique place where I have more control, and I choose what to display on the blog for you. But, in the end, it's my place and not someone's else, that gives such a courtesy to allow me in, and guarantee their right to banish me.
+I'm totally fine to keep all my thoughts isolated in a unique place where I have more control, and I choose what to display on the blog to you. But, in the end, it's my place and not someone's else, that gives such a courtesy to allow me in, and guarantee their right to banish me.
 
 Own your data. Embrace control.
