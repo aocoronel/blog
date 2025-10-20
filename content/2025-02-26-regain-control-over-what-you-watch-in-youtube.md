@@ -23,11 +23,9 @@ I used to use YouTube like any other regular person, until I stepped to the worl
 
 Since I read that post, I've started to get more aware of what I was consuming online, not only for YouTube. And so I wanted to keep all the content I consume aligned to what was my purpose, what I actually wanted to learn, and what I wanted to do.
 
-Them I found an amazing application called [FreeTube](https://freetubeapp.io/). This was a much better way to watch YouTube videos in an interface that was highly customizable, and the options to disable some content from showing up such as Trending, Popular Videos and Shorts. And them that was my choice. I completely shredded my YouTube data and moved to FreeTube ways of dealing with history, playlist and subscriptions.
+Then, I found an amazing application called [FreeTube](https://freetubeapp.io/). This was a much better way to watch YouTube videos in an interface that was highly customizable, and the options to disable some content from showing up such as Trending, Popular Videos and Shorts. And them that was my choice. I completely shredded my YouTube data and moved to FreeTube ways of dealing with history, playlist and subscriptions.
 
-By default, FreeTube uses its API to load videos and play them straight from YouTube API, and remove any kind of ads from it. From my experience, everytime youtube.js had changes, FreeTube API was directly affected, and I had a bad time until it's fixed, until a time I decided to circumvent this issue myself.
-
-FreeTube has the option to use an Invidious Instance as its backend, which does not rely on the youtube.js to work, and strip the ads itself. But Invidious providers doesn't offer very highly performance compared to FreeTube API. That was when I tried to self-host Invidious.
+FreeTube has the option to use an Invidious Instance as its backend, which does not rely on the youtube.js to work, and strip the ads itself. But Invidious providers doesn't offer very highly performance compared to FreeTube itself. That was when I tried to self-host Invidious.
 
 ## Setup
 
