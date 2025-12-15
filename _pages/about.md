@@ -1,41 +1,85 @@
 ---
-title: About
+title: About me
 ---
 
 ## $ whoami
 
-I'm quite a minimalist person, who loves to try digital tools, that are simple, and make some myself.
+I'm a programmer by hobby, who writes CLIs for Linux. I love to try either old or new technologies.
 
-I take programming as a hobby, and mostly of my handcraft goes towards terminal applications.
+I like to talk about Linux, programming and software.
 
-By the way, I wouldn't have the eager to make anything about tech, if I didn't use Linux (I use Arch, by the way). The reason is simple: you have control and freedom to do anything.
+## The Blog
 
-Beyond that, I'm currently a Veterinary Medicine undergraduate, who has a very long journey along the way.
+I believe that notes are almost useless, except for one type of note: Opinionated and/or original. Either if we are right or wrong, sharing is also learning.
 
-Note that any of my post aren't an ultimate source of truth. I'll try to bring other sources to reinforce my point of view, when possible. For subjetive posts, I'll make it clear that it is subjective, thus do not take it too serious.
+Keeping this in mind, do not expect my posts are neutral and provide technical analysis with educational purposes-only. This would be relevant for documentation, educational books and articles, where we care about facts, not opinions.
+
+However, I'll try to provide references to the knowledge I got, so you can take your own conclusions.
+
+Why write a blog? It serves as a reflection, allows me to broaden my view about things, and usually I find new pathways by writing.
+
+The blog design has been made by me, and is powered by `pandoc`, the tool I use to convert markdown to HTML. This blog doesn't uses JavaScript, and has been made with simplicity in mind.
 
 ## Philosophies
 
-I believe that the most simple things, the simplest projects and the tiny tools are the most efficient. It’s strange how the technology evolved to a bloated ecosystem whenever you look. That’s why I embrace the command line! Despise its simplicity of handling only text, it holds an immense power and infinite extensibility.
+The minimalism is something I find out to be the way. It just feels right anywhere you apply it, but nothing too extreme. I would rather say simplicity is the key, since minimalism is something very subjective. But, of course, there is no right way of doing anything.
 
-The minimalism is something I find out to be the way. It just feels right anywhere you apply it, but nothing too extreme. But, of course, there is no right way of doing anything.
+I praise many extensible tools, because they are not complete. By that, I mean there is no museum to walk through. You build your own museum by extending them to fit your needs. In other words, it's an incentive to creation.
 
-I praise many extensible tools, because they are not complete. By that, I mean there is no museum to walk through. You build your own museum by extending them to fit your needs. In other words, it's an incentive to creation. If it was all about consuming, you wouldn't be reading this right now. I would be surely be too busy reading someone's else content instead.
+I'm not shackled by social media, doom scrolling or by algorithm suggestions, but not immune (sometimes I find gold mines). I simply consume what I intend to. I'm free from the very known villain called smartphone. It's my tool, and not the opposite.
 
-I'm not shackled by social media, doom scrolling or by algorithm suggestions, but not immune. I simply consume what I intend to. I'm free from the very known villain called smartphone. It's my tool, and not the opposite.
-
-I believe knowledge should be accessible for all. That's why this blog will never serve contents behind a paywall.
+I believe knowledge should be accessible to all. That's why this blog will never serve contents behind a paywall.
 
 ## My Work
 
-Currently building simple scripts that solves common problems, without the extra bloat.
+I write scripts, programs and libraries with emphasis in simplicity and clarity.
 
-## My Goal
+I've written several personal scripts, which some I've expanded for a general usage. I've written many cheap and simple alternatives to other tools that does the same thing.
 
-My goal is to show how the tiny things are worth more.
+Most of my work goes around task automation, which is powered by languages like C and Shell, mostly, and other niche projects written in Rust, Python and Go.
+
+My projects have a pattern. They offer you freedom so you can use them the way you want. And also decentralized, so you are not locked in to services and subscriptions. I've written all for personal use, and if you ever got a benefited by using them, let me know!
 
 ## AI
 
-I cannot tell I did not use AI, and I cannot say I don't use.
+I'm opinionated about AI, but I'm almost an hypocrite to tell you what I think.
 
-Having that said, the contents from my posts are never going to be AI generated, this includes all text and images (except for the logo).
+First, I cannot tell you I don't use AI, but at least I know it's not a thinking thing neither omniscient as many may imagine.
+
+Second, AI sucks.
+
+Having that said, I believe creative work should be original, written, drawn and spoken with the mistakes. I get really upset people would write blog posts, create videos or whatever other way of sharing content fully generated by AI. So, this blog is never going to be AI generated. No text, image or else.
+
+## Some questions
+
+**Do you use social media?**
+
+Currently I do not. This may or may not change in the future.
+
+The major problem of having social media, is that there are many platforms. Then, trying to stay tuned with all is extremely exhaustive.
+
+**Do you vibe code?**
+
+Yes, and no. I do usually ask AI to teach me how to do something, and I take the rest. Usually through Chatbots, and not by an agent.
+
+**Why write CLIs?**
+
+CLIs are easy to make, and they're nature also makes it easy to script.
+
+I may start to make TUIs in the future though. And may also try, at least once, to make a GUI.
+
+For my experience with making websites, this is certainly something I don't like to do.
+
+**Why Linux?**
+
+It's just a kernel! Everything you see about servers and desktops is all what creativity can do.
+
+**What software do you use?**
+
+I have a [page](./programs.html) just for that.
+
+**Why programming as a hobby?**
+
+Programming just like playing an instrument, painting a drawing, or writing a book, it is all about creativity. What feels different about programming is that what you make stays with you.
+
+The technology is everywhere, and putting yourself in the place of the programmer also gives you the debugging knowledge to solve issues, even for software you have not written.

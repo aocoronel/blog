@@ -7,38 +7,30 @@ description: A collection of all the programs I use daily
 
 I choose software based on the following criteria:
 
-- **Local-first:** If a tool has remote syncing, all data should be still available locally, instead of blocked by an internet connection.
-- **Ownership and Availability:** I must have access to all my data, no matter what.
-- **Interchangeable:** If I decide to switch tools, they must allow me to export my data.
-- **Extensible:** I should be able to tinker with the tools, to shape them to fit my needs best.
-- **Simplicity:** The usage must be clean and simple.
-- **Open-source:** 90% of the software I choose has it's source open, often free to change and fork.
-- **CLI:** Most tools does not have an interface, which turns them scriptable in some way.
+- If a tool has remote syncing, all data should be still available locally, instead of blocked by an internet connection.
+- I must have access to all my data, no matter what.
+- If I decide to switch tools, they must allow me to export my data.
+- I should be able to tinker with the tools, to shape them to fit my needs best.
+- The usage must be clean and simple.
+- 90% of the software I choose has its source open, often free to change and fork.
+- Most tools I use does not have an interface, which turns them scriptable in many ways.
+- I prefer lightweight solutions.
 
 ### Proprietary Software
 
-I'm okay with having one or two proprietary software, but I do not accept myself relying on them.
+I'm okay with having one or two proprietary software, but I do not accept myself relying on them, for essential things.
 
 ## Programs I Use
 
-For a full list of all the programs I use, you can either check on [aocoronel/mirror-config](https://github.com/aocoronel/mirror-config) or my [NixOS](https://github.com/aocoronel/nix) repository.
+For a full list of all the programs I use, you can either check on [aocoronel/pacmirror-config](https://git.disroot.org/aocoronel/pacmirror-config) or my [NixOS](https://github.com/aocoronel/nix) repository.
 
 ### GUIs
 
+This list is tiny, because my whole daily usage in my desktop is 50% on the browser and the other 50% at the terminal.
+
 **Web Browser**
 
-- **Zen Browser** took my attention since its beta version, and it's fairly a great option, for some use cases. I use it with no insane modifications. I currently use these extensions:
-
-- uBlock Origin.
-- Privacy Badger.
-- Canvas Blocker with random number generator set to `nonpersistant`.
-- Decentraleyes.
-- Surfingkeys. This one is an absolute must have. It's vim in the browser.
-- Dark Reader. I often leave it disabled.
-- NoScript. I actually, leave it globally disabled.
-- Firefox Multi-Account Container. Feature killer for my Firefox experience. It allows me to open containers automatically for configured websites. For example, when I click in a GitHub link I'm sent to a container which has my account logged in.
-
-For Zen Browser native plugins, I do only have one: Tab Numbers. This is essential, since I leave my sidebar always collapsed.
+Firefox forks: Librewolf, Zen Browser...
 
 **Audio Editor**
 
@@ -70,13 +62,13 @@ I host an **Invidious** instance using **Podman**, and I access it using **FreeT
 
 **Terminal Emulator**
 
-I tried all the terminals. **Alacritty** is the one that brings all the features I need, without the ones I don't.
+I'm currently using **foot** in Wayland for its simple design, good collection of features and for its server feature.
 
 ### TUIs
 
 **Display Manager**
 
-I use the cleanest display manager: **ly**. This simple TUI gives you everything you need to quickly reboot, poweroff, switch Window Managers, change users and change wallpapers, as a great alternative to GUI tools like **sddm**. It's probably one of the few programs I use, that are written in Zig.
+I don't use any at all.
 
 **Email Client**
 
@@ -92,17 +84,17 @@ Fetch several feeds asynchronously, read all the titles in a blink, read the act
 
 **Text Editor**
 
-Hands down. **neovim** brings the best vim experience barebones. With plugins it becomes almost anything. I currently use it for all small file edits or to write code. Unfortunately, the tool that can become everything is **Emacs**, and I don't use it.
+Hands down. **neovim** brings the best vim experience barebones. With plugins it becomes almost anything. I currently use it for all small file edits or to write code.
+
+My thoughts on Emacs? I don't want to run an OS in my OS.
 
 **File Management**
 
 **ranger** for everything, and **yazi**, when I feel it's slow.
 
+Or maybe, I'm too lazy to run `cd`, `rm` and `mv` around.
+
 ### CLIs
-
-**Static Site Generator**
-
-I use **zola** with the radion theme. Once I was using **pandoc** for this purpose, but when I found about **zola**, I found a much better way and optimized solution with less amateur features and inconsistencies.
 
 **Password Manager**
 
@@ -110,7 +102,7 @@ I use the legendary **pass** (PasswordStore) to store my OTP secrets. You read i
 
 **File Encryption**
 
-I used to use **gocryptfs** for cloud syncing, but I do just use **tomb** now, whenever I have encryption necessities.
+I used to use **gocryptfs** for cloud syncing, but I do just use **tomb** now, whenever I have encryption necessities. And to be fair, I do barely use any of these.
 
 **Backup**
 
@@ -118,7 +110,7 @@ I use **restic** to create backup snapshots that are encrypted and synced with a
 
 **Task Management**
 
-**Taskwarrior** is a task management tool I found as an alternative to **Todoist** to quickly show me what to do next, and control over my data. With few strokes I know what to do, and when to do anything. Disclaimer, I do use the `2.6.2` version, when the database was backed by JSON files, and not SQLite as from `3.x.x`. This means I can use git.
+Plain-text.
 
 **Music Player**
 
@@ -134,17 +126,15 @@ I often use **ssh** and **rsync** together to sync some files between my devices
 
 **Dotfiles Organizer**
 
-I use the **GNU stow** in my [dotfiles](https://github.com/aocoronel/dotfiles) repository to organize my dotfiles. For anything else I need to do with a symlink, I use [neostow](https://github.com/aocoronel/neostow-sh) instead.
+I use the **GNU stow** in my [dotfiles](https://git.disroot.org/aocoronel/dotfiles) repository to organize my dotfiles. For anything else I need to do with a symlink, I use [neostow](https://codeberg.org/aocoronel/neostow-sh) instead.
 
 **Terminal Multiplexer**
 
-I use **tmux** not for the reason you think. I use it whenever I need a long process to keep running. That way I can close my terminal and I still have it running. For a real multiplexing experience I do rely on Window Managers. To further take my tmux experience to the next level, I use **tmuxp** to define custom sessions with a specific layout or programs.
+I use **tmux** not for the reason you think. I use it whenever I need a long process to keep running. That way I can close my terminal and I still have it running. For a real multiplexing experience I do rely on Window Managers.
 
 ### Window Manager
 
-I use **Qtile** for a Xorg WM experience, with almost all features I currently have in my Wayland one. It's a simple and highly extensible Python WM.
-
-For Wayland I have **Hyprland**, initially for the visuals, but I stayed, because of `hyprctl`. This CLI tool allows me to script some actions in Hyprland, so I can list all currently open windows, select it and move to it. If I have a terminal with a tmux running, I can quickly select which session to go, and it switches to the terminal and switches the session.
+On Wayland I use **Hyprland**, initially for the visuals, but I stayed, because of `hyprctl`. This CLI tool allows me to script some actions in Hyprland, so I can list all currently open windows, select it and move to it. If I have a terminal with a tmux running, I can quickly select which session to go, and it switches to the terminal, and then switches the session.
 
 ### Shell
 
