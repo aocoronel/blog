@@ -152,3 +152,67 @@ Now we can use the Zig arena allocator in C. Don't tell this to anyone.
 What did I wanted to mean with all of these? Zig has A learning curve. It's not just pick and play, and to properly write anything in it, you will need to know what the compiler does. Odin is just a better alternative, because if you know how to program, you can simply just start using it and things will work of how simple it is. I picked Odin, and from 0 knowledge I went to a multi-threaded grep clone in 5 hours, having just C as a background language.
 
 Things like this matters. I like C so much I had put myself into so many projects like [cstar](https://codeberg.org/aocoronel/cstar). The idea was to bring a second preprocessor to the language that is small enough to be embedded in any project, but at what cost? I planned automatic header generation, comptime code generation and execution, fancier macros, a module system that would integrate with another project of mine to build the entirety of the project without a build system. I also engaged in my own sort of C standard library. But in the end I just realized, that I was just doing it because I was uncomfortable with the language in the first place. I wanted C, but not C. Languages like Zig, Rust, Odin, Go, C3, Jai and many more have so many interesting features, I wanted them in C, into this language where it's the closest to assembly and bare minimum features. No language so far have ever brought a language in the same level of simplicity as C, but at little bit more lower level, and that could allow to, somehow, tinker with the compiler directly in any project. That's my programming language of the dreams.
+
+> Edit from 2026-04-07:
+
+Honestly, I really think C isn't really for me. I've been working in a C interface implementation, and I ended up coming with this: [permalink](https://codeberg.org/aocoronel/c-interfaces/src/commit/35223533c2cc7ffd64e5c517f8e3106068a702dc/main.c).
+
+```c
+// main.c
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define definitions
+#include "add.h"
+
+#define add(...) add(using, __VA_ARGS__)
+#define err error(using)
+#define orelse(...) orelse(using, __VA_ARGS__)
+
+#define use(x) using = x
+
+#define let __auto_type
+
+int main(int argc, char *argv[]) {
+    void *using;
+
+    // Warning: __auto_type is a GNU extension. A portable approach would be:
+    //
+    // #define interface(name) __typeof__(const struct name##_vtable)
+    let x = vector2(.x = 190.0, .y = 0.0 );
+    let b = vector2(.x = 20.0, .y = 0.0 );
+
+    use(&x); // expands in add()
+
+    x.add(b).add(b); // use interface
+
+    $vector2.add(b); // global
+
+#define str $vector2
+    str.add(b); // renamed global
+
+    vector2().add(b); // init and use
+
+    assert(x.x == 190.0 + (20.0 * 5.0));
+
+    let z = vector2( .x = 0.0, .y = 0.0);
+
+    {
+        use(NULL);
+        z = z.add(b).orelse(b); // add fails, return b
+        assert(z.x == b.x);
+
+        // try
+        if (z.add(b).err) return 1;
+    }
+
+    abort(); // unreachable
+}
+
+// gcc main.c -O3 -flto -S
+```
+
+This is way too much. Any C developer that look at this will have a heart attack. And in fact this is a valid C program that compiles with `gcc`, `clang` and `zig cc`, and the generated assembly just returns 1. The vtable can be devirtualized and everything is inlined we if make `x` volatile.
+
+Always, after a while I give a look at other programming languages, like Zig, Odin, C++, D and Rust, just to name a few. Lastly when I looked up to C++ (which has all the features I would love C to have, but unfortunately has way too much), and I made a simple program that returns 0 right away. I compiled it and ran valgrind, then I got surprised, because with just that the program allocated 73kb. Just right now I discovered a interesting flag you can pass to the C++ compiler, the `-nostdlib++`. This is enough to remove that weird 73kb allocation, and now apparently I can use C++ as C... we will see, if it's a good idea to use it like that, or use this even insaner C implementation or just give up to Zig or Rust already.
