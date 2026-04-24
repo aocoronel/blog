@@ -3,7 +3,7 @@ title: Programs I Use
 description: A collection of all the programs I use daily
 ---
 
-> Last update: 2026-04-14
+> Last update: 2026-04-23
 
 ## Philosophy
 
@@ -26,55 +26,55 @@ I'm okay with having one or two proprietary software, but I do not accept myself
 
 For a full list of all the programs I use, you can check on [aocoronel/pacmirror-config](https://github.com/aocoronel/pacmirror-config). This list is always updated.
 
-**Display manager**: I don't use any at all. All I do is `startx`
-**Display server**: XLibre
-**Filesystem**: xfs
-**Init system**: dinit
-**Keybinding manager (or something like that)**: sxhkd
-**Operational system**: Artix Linux
-**Window manager**: `dwm` without patches
+- **Display manager**: I don't use any at all. All I do is `startx`
+- **Display server**: XLibre
+- **Filesystem**: xfs
+- **Init system**: dinit
+- **Keybinding manager (or something like that)**: sxhkd
+- **Operational system**: Artix Linux
+- **Window manager**: `dwm` without patches
 
 Arch-based specific:
 
-**AUR helper**: yay
-**Declarative package management**: [pacmirror](https://codeberg.org/aocoronel/pacmirror.c)
+- **AUR helper**: yay
+- **Declarative package management**: [pacmirror](https://codeberg.org/aocoronel/pacmirror.c)
 
 GUIs:
 
-**Audio editor**: Tenacity
-**Image editor**: GIMP
-**Image viewer**: nsxiv
-**Office**: LibreOffice
-**PDF viewer**: Zathura
-**Screenshoter**: Flameshot
-**Terminal emulator**: Suckless simple terminal
-**Text editor**: Emacs
-**Video editor**: Shotcut
-**Web browser**: Firefox with `arkenfox.js`, uBlock Origin, SurfingKeys and Tampermonkey
-**Window swithcer**: Rofi
-**YouTube frontend**: FreeTube in desktop, PipePipe in Android
+- **Audio editor**: Tenacity
+- **Image editor**: GIMP
+- **Image viewer**: nsxiv
+- **Office**: LibreOffice
+- **PDF viewer**: Zathura
+- **Screenshoter**: Flameshot
+- **Terminal emulator**: Suckless simple terminal
+- **Text editor**: Emacs
+- **Video editor**: Shotcut
+- **Web browser**: Firefox with `arkenfox.js`, uBlock Origin, SurfingKeys and Tampermonkey
+- **Window swithcer**: Rofi
+- **YouTube frontend**: FreeTube in desktop, PipePipe in Android
 
 TUIs:
 
-**Email client**: neomutt
-**File manager**: Either `oil.nvim` or `dired` in Emacs. Whenever I need something fancier I use `ranger` or `pcmanfm`
-**Media player**: mpv
-**Music player**: cmus
-**RSS feeds**: newsboat
-**Text editor**: Neovim
+- **Email client**: neomutt
+- **File manager**: Either `oil.nvim` or `dired` in Emacs. Whenever I need something fancier I use `ranger` or `pcmanfm`
+- **Media player**: mpv
+- **Music player**: cmus
+- **RSS feeds**: newsboat
+- **Text editor**: Neovim
 
 CLIs:
 
-**Backup**: restic
-**Bookmark manager**: [bmark](https://codeberg.org/aocoronel/bmark)
-**Dotfile manager**: [neostow](https://codeberg.org/aocoronel/neostow-c)
-**File encryption**: tomb
-**File syncing**: use sync files using `ssh`, `sftp` and `rsync`
-**Media converter**: ffmpeg
-**Password manager**: `pass` to store OTP, and `lesspass` as my stateless password manager
-**Shell**: zsh
+- **Backup**: restic
+- **Bookmark manager**: [bmark](https://codeberg.org/aocoronel/bmark)
+- **Dotfile manager**: [neostow](https://codeberg.org/aocoronel/neostow-c)
+- **File encryption**: tomb
+- **File syncing**: use sync files using `ssh`, `sftp` and `rsync`
+- **Media converter**: ffmpeg
+- **Password manager**: `pass` to store OTP, and `lesspass` as my stateless password manager
+- **Shell**: zsh
 
 Other:
 
-**Note-taking**: black pen and A4 white paper
-**Task management**: my head and occasionally spread over the filesystem as plain-text
+- **Note-taking**: black pen and A4 white paper
+- **Task management**: my head and occasionally spread over the filesystem as plain-text
