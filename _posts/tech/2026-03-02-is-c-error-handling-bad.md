@@ -64,35 +64,21 @@ There some things that are only worth it experimenting yourself, rather than che
 Shall simplicity be the endgame of programming.
 
 ```c
-#include <assert.h>
+#include <limits.h>
 #include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-bool return_hello_world(char **s) {
-    assert(s != NULL && "Passing invalid pointer");
-    char *hello_world = "Hello, World!";
-    int hello_buff = strlen(hello_world) + 1;
-    *s = malloc(hello_buff);
-    if (!s)
-        return false;
-    bool err = memcpy(*s, hello_world, hello_buff) == NULL;
-    if (err) {
-        free(*s);
-        return false;
-    }
+// x + y, but checks for integer overflow
+bool foo(int x, int y, int *result) {
+    if (y > 0 && x > INT_MAX - y) return false;
+    if (y < 0 && x < INT_MIN - y) return false;
+    *result = x + y;
     return true;
 }
 
 int main(void) {
-    char *buff = NULL;
-    if (!return_hello_world(&buff)) {
-        fprintf(stderr, "Failed to retrieve the \"Hello, World!\" string\n");
-        return 1;
-    }
-    printf("%s\n", buff);
-    free(buff);
+    int result = 0;
+    if (!foo(10, 10, &result)) return 1;
+    printf("Foo: %d\n", result);
     return 0;
 }
 ```
