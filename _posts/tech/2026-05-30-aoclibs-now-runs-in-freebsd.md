@@ -1,10 +1,10 @@
 ---
-title: aoclibs now supports FreeBSD
+title: aoclibs now runs in FreeBSD
 description: FreeBSD is our second home, case something horrible happens to Linux
 date: May 30, 2026
 ---
 
-> TL;DR If you clicked because of the title, only one line in aoclibs was made to support FreeBSD. Now aoclibs supports Linux x86_64, aarch64 and FreeBSD x86_64 (currently tested)
+> TL;DR If you clicked because of the title, only one line in aoclibs was made to run in FreeBSD. Now aoclibs supports Linux x86_64, aarch64 and FreeBSD x86_64 (currently tested)
 
 I decided to give other operational systems a try, including a second chance for Windows. I wonder if I could write code and run aoclibs in order to see how portable it is.
 
