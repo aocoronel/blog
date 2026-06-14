@@ -36,7 +36,7 @@ For a full list of all the programs I use, you can check on [aocoronel/pacmirror
 
 Arch-based specific:
 
-- **AUR helper**: yay
+- **AUR helper**: None. I vendor PKGBUILDs from AUR, instead.
 - **Declarative package management**: [pacmirror](https://codeberg.org/aocoronel/pacmirror.c)
 
 GUIs:
