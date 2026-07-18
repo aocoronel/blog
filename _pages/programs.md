@@ -3,7 +3,7 @@ title: Programs I Use
 description: A collection of all the programs I use daily
 ---
 
-> Last update: 2026-04-23
+> Last update: 2026-07-18
 
 ## Philosophy
 
@@ -52,15 +52,11 @@ GUIs:
 - **Video editor**: Shotcut
 - **Web browser**: Firefox with `arkenfox.js`, uBlock Origin, SurfingKeys and Tampermonkey
 - **Window swithcer**: Rofi
-- **YouTube frontend**: FreeTube in desktop, PipePipe in Android
 
 TUIs:
 
-- **Email client**: neomutt
 - **File manager**: Either `oil.nvim` or `dired` in Emacs. Whenever I need something fancier I use `ranger` or `pcmanfm`
 - **Media player**: mpv
-- **Music player**: cmus
-- **RSS feeds**: newsboat
 - **Text editor**: Neovim
 
 CLIs:
@@ -69,9 +65,9 @@ CLIs:
 - **Bookmark manager**: [bmark](https://codeberg.org/aocoronel/bmark)
 - **Dotfile manager**: [neostow](https://codeberg.org/aocoronel/neostow-c)
 - **File encryption**: tomb
-- **File syncing**: use sync files using `ssh`, `sftp` and `rsync`
+- **File syncing**: sync files using `sftp` and `rsync` over `ssh`
 - **Media converter**: ffmpeg
-- **Password manager**: `pass` to store OTP, and `lesspass` as my stateless password manager
+- **Password manager**: `pass` to store OTP, and [tinypass](https://codeberg.org/aocoronel/tinypass) as my stateless password manager
 - **Shell**: zsh
 
 Other:
