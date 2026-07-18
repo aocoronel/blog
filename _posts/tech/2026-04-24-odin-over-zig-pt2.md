@@ -4,7 +4,7 @@ description: A brief comparasion and how I look at programming languages
 date: Apr 24, 2026
 ---
 
-One month passed since I ranted a little bit about programming languages, and I got a whole bunch of new opiniosas well.
+One month passed since I ranted a little bit about programming languages, and I got a whole bunch of new opinions as well.
 
 When I initially wrote about Odin over Zig, I had only played a little bit with both languages, only seeing the surface of them. But I took this last month to make a project in both of them. I wrote `yag` as a Odin program, ranted about Zig and then rewrote `yag` in Zig. For this short move I actually managed to make it more strategically then my first try with Odin, although it was very easy to pick up. Zig in other hand wasn't really that hard, but also because I played a lot of `zigglings` before trying it.
 

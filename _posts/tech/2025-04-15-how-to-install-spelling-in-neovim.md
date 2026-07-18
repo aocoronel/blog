@@ -4,6 +4,9 @@ description: Neovim does not have support for spelling other than English by def
 date: Mar 14, 2025
 ---
 
+> Note from 2026-07-18
+> Back when I did this post, Neovim only provided the English spelling bundled with it, so other languages would required all the steps below. However, I don't know at which version, Neovim know figures out your language from your config, and asks to download it for you. This post is no longer useful, unless you want the dictionary for something else.
+
 Neovim does not have support for spelling other than English by default. Here are how you can get the required files to enable spelling in `neovim`.
 
 You can find a list of dictionaries from LibreOffice at: [LibreOffice Extensions](https://extensions.libreoffice.org/?q=Dictionary&action_doExtensionSearch=Search).

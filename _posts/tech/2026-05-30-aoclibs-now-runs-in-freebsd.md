@@ -12,13 +12,13 @@ Then I installed Windows in bare-metal again, after almost three years I moved t
 
 C isn't that complicated. What it does is preprocess the file and basically provide the compiler a single file, which is the translation unit. The compiler will lex, parse, some may also generate AST, and then emit assembly. After that the compiler will call the assembler to turn assembly into binary, which can be ran by the machine. What is 3GB for this simple task? But of course, Microsoft doesn't even name the package like "C" but "C++", because why not, right?
 
-I went the `mingw` route, but that's honestly bizarre. I'm in Windows running Linux to compile using `mingw` to compile a PE to run in Windows...
+I went the `MinGW` route, but that's honestly bizarre. I'm in Windows running Linux to compile using `mingw` to compile a PE to run in Windows...
 
-I also did slightly tried windows.h. This API is probably based in C++ code. I can't really tell, but it's a Microsoft thing like C# and C++ to make an entry point called WinMain, so you can make your GUI Windows program, just so I realized when I was resizing the window, that it doesn't live resize like in Linux. What OS is even this?
+I also did slightly tried `windows.h`. This API is probably based in C++ code. I can't really tell, but it's a Microsoft thing like C# and C++ to make an entry point called `WinMain`, so you can make your GUI Windows program, just so I realized when I was resizing the window, that it doesn't live resize like in Linux. What OS is even this?
 
 I still hold my words. Windows gives the worst user experience for installing drivers, software, customization, window management, overall performance and updating the system. Not only to mention it's powered by most corporate proprietary garbage. In my early days I would never note these, because Windows was just the gatekeeper for my games, but now that I care about usability, I just can't stand it. Microsoft officially declared Windows lost to Linux for desktop, by their new Linux distro called Azure Linux 4.0 for **GENERAL AND DESKTOP USAGE**. You shall now use `wine` to run the favorite apps that vendor locked you in.
 
-Anyways. I decided to never ever write a Windows program, neither support it in my libraries including aoclibs. I don't time neither will to deal with it.
+Anyways. I decided to never ever write a Windows program, neither support it in my libraries including `aoclibs`. I don't have time, neither want to deal with it. I'm always told people need a system for them to do things, even if they are not nerds like me, and also hear developers write software for it, because the majority of users are at Windows, and it's the system where developers can make most money from. It's fine if you think about this side of the coin, but I just don't care.
 
 MacOS? I don't have, neither want to have Apple hardware to be vendor locked in it as well. Not happening.
 
