@@ -1,0 +1,29 @@
+#+title: cc-sh
+#+description: simple wrapper for gcc and clang with convenient flags
+
+#+HTML: <p class="content-desc"><a href="./cc">Source code</a></p>
+
+~cc.sh~ is a very simple wrapper for ~gcc~ and ~clang~ using recommendations provided by [[https://airbus-seclab.github.io/c-compiler-security/][C Compiler Security by Airbus-Seclab]].
+
+** Usage
+
+#+begin_src bash
+cc.sh
+
+Usage: gcc/clang --CC=OPTION ...
+
+Options:
+  analyze          Enable analyzer (gcc only)
+  debug            Enable most debug flags
+  help             Display this message and exits
+  integer          Enable integer protections
+  leak             Enable leak sanitizer
+  release          Enable optimizations
+  stack            Enable stack sanitizer
+  stack-protector  Enable stack protector
+  thread           Enable thread sanitizer
+#+end_src
+
+** License
+
+This project is available as public-domain under the CC0 License.

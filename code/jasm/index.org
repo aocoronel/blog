@@ -1,0 +1,23 @@
+#+title: jasm
+#+description: proof of concept to integrate C and JavaScript
+
+#+HTML: <p class="content-desc"><a href="./jasm.tar.gz">Source code</a></p>
+
+This is a simple project aiming to learn JavaScript and WASM.
+
+** Compiling
+
+#+begin_src bash
+bash build.sh
+#+end_src
+
+** Running
+
+#+begin_src bash
+python -m http.server 8080
+firefox http://localhost:8080
+#+end_src
+
+** License
+
+This project is available as public-domain under the CC0 License.

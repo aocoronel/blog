@@ -1,0 +1,36 @@
+#+TITLE: Archive
+
+Sep 28, 2026 [[file:posts/2026-09-28-moved-from-git.html][I moved from git]]
+
+Sep 20, 2026 [[file:posts/2026-09-20-my-learning-theory.html][My learning theory]]
+
+Sep 2, 2026 [[file:posts/2026-09-02-i-like-rust.html][I like Rust]]
+
+Aug 5, 2026 [[file:posts/2026-08-05-im-done-with-c.html][I'm done with C]]
+
+Jul 11, 2026 [[file:posts/2026-07-11-valid-c.html][Valid C]]
+
+Jun 16, 2026 [[file:posts/2026-06-16-tabs-vs-spaces.html][Tabs vs Spaces]]
+
+Jun 14, 2026 [[file:posts/2026-06-14-a-better-aur.html][A better AUR]]
+
+May 30, 2026 [[file:posts/2026-05-30-aoclibs-now-runs-in-freebsd.html][aoclibs now runs in FreeBSD]]
+
+May 22, 2026 [[file:posts/2026-05-22-tildeverse.html][Tildeverse]]
+
+May 9, 2026 [[file:posts/2026-05-09-when-you-know-something-you-can-improvise.html][When you know something you can improvise]]
+
+Apr 24, 2026 [[file:posts/2026-04-24-odin-over-zig-pt2.html][Odin over Zig [Part 2]]]
+
+Mar 22, 2026 [[file:posts/2026-03-22-odin-over-zig.html][Odin over Zig]]
+
+Mar 2, 2026 [[file:posts/2026-03-02-is-c-error-handling-bad.html][Is C error handling bad?]]
+
+Jan 26, 2026 [[file:posts/2026-01-26-emacs-and-neovim.html][Emacs and Neovim]]
+
+Dec 24, 2025 [[file:posts/2025-12-24-guide-to-learn.html][A quick post on how I learn things]]
+
+Oct 11, 2025 [[file:posts/2025-10-11-i-dont-use-social-media.html][I don't use social media, and why you should]]
+
+Apr 15, 2025 [[file:posts/2025-04-15-how-to-install-spelling-in-neovim.html][How to Install Spelling in Neovim]]
+

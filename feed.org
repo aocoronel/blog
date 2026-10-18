@@ -1,0 +1,40 @@
+#+TITLE: Augusto Coronel
+#+DESCRIPTION: Latest posts from Augusto Coronel
+#+LANGUAGE: en
+
+* I moved from git
+:PROPERTIES:
+:RSS_DATE: 2026-09-28
+:RSS_PERMALINK: /posts/2026-09-28-moved-from-git.html
+:END:
+
+* My learning theory
+:PROPERTIES:
+:RSS_DATE: 2026-09-20
+:RSS_PERMALINK: /posts/2026-09-20-my-learning-theory.html
+:END:
+
+* I like Rust
+:PROPERTIES:
+:RSS_DATE: 2026-09-2
+:RSS_PERMALINK: /posts/2026-09-02-i-like-rust.html
+:END:
+
+* I'm done with C
+:PROPERTIES:
+:RSS_DATE: 2026-08-5
+:RSS_PERMALINK: /posts/2026-08-05-im-done-with-c.html
+:END:
+
+* Valid C
+:PROPERTIES:
+:RSS_DATE: 2026-07-11
+:RSS_PERMALINK: /posts/2026-07-11-valid-c.html
+:END:
+
+* Tabs vs Spaces
+:PROPERTIES:
+:RSS_DATE: 2026-06-16
+:RSS_PERMALINK: /posts/2026-06-16-tabs-vs-spaces.html
+:END:
+

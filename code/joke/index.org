@@ -1,0 +1,30 @@
+#+title: joke
+#+description: Jokes from Joke API
+
+#+HTML: <p class="content-desc"><a href="./joke.odin">Source code</a></p>
+
+A program that fetches jokes from [[https://github.com/15Dkatz/official_joke_api][Joke API]], and displays them using ~cowsay~.
+
+#+begin_src console
+ ____________________________________
+< What kind of pants do ghosts wear? >
+ ____________
+< Boo jeans. >
+ ------------
+         \   ^__^
+          \  (^^)\_______
+             (__)\       )\/\
+                ||----w |
+                ||     ||
+
+#+end_src
+
+** Using
+
+#+begin_src bash
+odin run .
+#+end_src
+
+** License
+
+The creative design of Cowsay is licensed in the cowsay license, but the actual code is public-domain under the CC0 License.
