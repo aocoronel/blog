@@ -2,7 +2,7 @@
 #+description: A collection of all the programs I use daily
 
 #+BEGIN_QUOTE
-Last update: 2026-10-03
+Last update: 2026-11-24
 #+END_QUOTE
 
 ** Philosophy
@@ -28,12 +28,13 @@ For a full list of all the programs I use, you can check on [[https://github.com
 
 The following list of packages are the ones I have a personal preference over. It doesn't mean their are the best ever.
 
-- *Display manager*: None. I just run ~startx~
-- *Display server*: Xorg
+- *Operational system*: Void Linux
 - *Filesystem*: xfs
 - *Init system*: runit
-- *Operational system*: Void Linux
+- *Display server*: Xorg
 - *Window manager*: i3
+- *Display manager*: None. I just run ~startx~
+- *Networking*: wpa_supplicant and dhcpcd
 
 User packages:
 
@@ -55,12 +56,10 @@ Software:
 - *Document converter*: pandoc
 - *Dotfile manager*: [[https://github.com/aocoronel/neostow][neostow]]
 - *File encryption*: gnupg
-- *File manager*: ranger
-- *File syncing*: sync files using sftp, and rsync over ssh
+- *File syncing*: sftp, and rsync over ssh
 - *Firewall*: ufw
-- *Graphical debugger*: gf2
+- *Graphical debugger*: raddebugger
 - *Image editor*: GIMP
-- *Keybinding manager (or something like that)*: sxhkd
 - *Media converter*: ffmpeg
 - *Media player*: mpv
 - *Notification daemon*: dunst
@@ -71,15 +70,15 @@ Software:
 - *Shell*: zsh
 - *Terminal emulator*: st without patches
 - *Video editor*: shotcut
-- *Web browser*: brave with SurfingKeys and Tampermonkey
-- *Window swithcer*: rofi
+- *Web browser*: ladybird
+- *Window switcher*: rofi
 
 Emacs:
 
 - *Accounting*: ledger-mode
 - *Email Client*: mu4e
 - *File manager*: dired
-- *Git Interface*: magit
+- *Version Control Interface*: vc (for git and fossil)
 - *Image viewer*: image-dired for gallery display
 - *Music player*: emms
 - *PDF viewer*: pdf-tools

@@ -1,0 +1,137 @@
+#+AUTHOR: Augusto Coronel
+#+DESCRIPTION: A description of this document
+
+#+BEGIN_EXPORT html
+<div class="index-card">
+<a href="/" style="margin-right: 40px" ><img type="image/avif" src="/logo.avif" /></a>
+<span>
+  <p class="content-title">Augusto Coronel</p>
+  <p class="content-desc">
+    I’m a tech enthusiast and programming self-taught hobbist. I
+    build CLIs for Linux.
+  </p>
+  <p class="content-desc">
+    <a href="mailto:aocoronelx@gmail.com">Email</a> |
+    <a href="https://aocoronel.github.io/links">Links</a>
+  </p>
+</span>
+</div>
+#+END_EXPORT
+
+* Latest posts
+Nov 25 [[file:posts/2026-11-25-threading-is-hard.html][Threadding isn't hard]]
+
+Nov 24 [[file:posts/2026-11-24-fossil.html][Fossil SCM]]
+
+Sep 20 [[file:posts/2026-09-20-my-learning-theory.html][My learning theory]]
+
+Sep 2 [[file:posts/2026-09-02-i-like-rust.html][I like Rust]]
+
+Aug 5 [[file:posts/2026-08-05-im-done-with-c.html][I'm done with C]]
+
+Jul 11 [[file:posts/2026-07-11-valid-c.html][Valid C]]
+
+
+[[file:archive.org][See all posts]]
+
+* Notes
+
+[[file:programs-i-use.org][Programs I Use]]
+
+** [[file:single-file-projects.org][Single file project]]
+
+#+BEGIN_EXPORT html
+<details>
+  <summary><a href="/code/volatile/index.html">volatile</a>: Wipe files using a whitelist or blacklist</summary>
+  <ul>
+    <li>Language: C</li>
+    <li>License: CC0</li>
+    <li><a href="/code//volatile/volatile.c">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//sear/index.html">sear</a>: Interact with Kagi Bangs in the CLI</summary>
+  <ul>
+    <li>Language: Python</li>
+    <li>License: CC0</li>
+    <li><a href="/code//sear/sear.py">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//gha/index.html">gha</a>: Interact with GitHub starred repositories and manage following users</summary>
+  <ul>
+    <li>Language: Shell</li>
+    <li>License: CC0</li>
+    <li><a href="/code//gha/gha">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//bsp/index.html">bsp</a>: simple bash preprocessor</summary>
+  <ul>
+    <li>Language: Shell</li>
+    <li>License: CC0</li>
+    <li><a href="/code//bsp/bsp">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//cc-sh/index.html">cc-sh</a>: simple wrapper for gcc and clang with convenient flags</summary>
+  <ul>
+    <li>Language: Shell</li>
+    <li>License: CC0</li>
+    <li><a href="/code//cc-sh/cc">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//tinypass/index.html">tinypass</a>: public-domain simple stateless password manager</summary>
+  <ul>
+    <li>Language: C</li>
+    <li>License: CC0</li>
+    <li><a href="/code//tinypass/tinypass.c">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//joke/index.html">joke</a>: Jokes from Joke API</summary>
+  <ul>
+    <li>Language: Odin</li>
+    <li>License: CC0</li>
+    <li><a href="/code//joke/joke.odin">Source code</a></li>
+  </ul>
+</details>
+#+END_EXPORT
+
+*** Experiments
+
+#+BEGIN_EXPORT html
+<details>
+  <summary><a href="/code//multicore/index.html">multicore</a>: Multi-core by default</summary>
+  <ul>
+    <li>Language: Rust</li>
+    <li>License: CC0</li>
+    <li><a href="/code//multicore/multicore.rs">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//c-interfaces/index.html">c-interfaces</a>: Method syntatic sugar for C functions</summary>
+  <ul>
+    <li>Language: C</li>
+    <li>License: CC0</li>
+    <li><a href="/code//c-interfaces/index.html">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//embed-bash/index.html">embed-bash</a>: tiny example on how to embed executable in bash</summary>
+  <ul>
+    <li>Language: Shell</li>
+    <li>License: CC0</li>
+    <li><a href="/code//embed-bash/index.html">Source code</a></li>
+  </ul>
+</details>
+<details>
+  <summary><a href="/code//jasm/index.html">jasm</a>: proof of concept to integrate C and JavaScript</summary>
+  <ul>
+    <li>Language: JavaScript, C, Shell</li>
+    <li>License: CC0</li>
+    <li><a href="/code//jasm/jasm.tar.gz">Source code</a></li>
+  </ul>
+</details>
+#+END_EXPORT

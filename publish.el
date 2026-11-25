@@ -101,6 +101,8 @@ textarea { overflow-x: auto; }
         ("rss"
          :base-directory "~/blog/"
          :base-extension "org"
+         :author "Augusto Coronel"
+         :email "aocoronelx@gmail.com"
          :publishing-directory "~/public/"
          :publishing-function org-rss-publish-to-rss
          :exclude "index\\.org\\|archive\\.org"
@@ -146,8 +148,9 @@ textarea { overflow-x: auto; }
 
         ("static"
          :base-directory "~/blog/"
-         :base-extension "css\\|avif\\|js\\|png\\|jpg\\|svg\\|html"
+         :base-extension any
          :publishing-directory "~/public/"
+         :exclude "\\.\\(?:org\\|git\\|gitignore\\|el\\)\\'"
          :recursive t
          :publishing-function org-publish-attachment)
 
@@ -261,10 +264,20 @@ textarea { overflow-x: auto; }
                            "^#\\+title:[ \t]*\\(.+\\)$"
                            nil t)
                           (string-trim (match-string 1))
-                        (file-name-base file)))))
+                        (file-name-base file))))
+                    (desc
+                      (with-temp-buffer
+                       (insert-file-contents
+                        (expand-file-name file posts-dir))
+								      (goto-char (point-min))
+								      (if (re-search-forward "^#\\+description:[ \t]*\\(.+\\)$" nil t)
+								          (string-trim (match-string 1))
+                          ("no description")))))
+
               (list
                :file file
                :title title
+               :desc desc
                :date date
                :date-long (format-time-string "%b %-d, %Y" date)
                :date-short (format-time-string "%b %-d" date)
@@ -312,7 +325,9 @@ textarea { overflow-x: auto; }
           (insert ":PROPERTIES:\n")
           (insert (format ":RSS_DATE: %s\n" (format-time-string "%Y-%m-%-d" (plist-get file :date))))
           (insert (format ":RSS_PERMALINK: /%s\n" (plist-get file :html)))
-          (insert ":END:\n\n")))
+          (insert ":END:\n")
+          (when-let* ((desc (plist-get file :desc)))
+            (insert  desc "\n"))))
 
     ;; index.org
     (with-temp-buffer

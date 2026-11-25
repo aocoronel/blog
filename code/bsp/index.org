@@ -5,7 +5,7 @@
 
 ~bsp~ is a very simple script, which aims to allow users to write shell scripts that span multiple files, without the worry to still put it all into a single script file.
 
-## Installing and Using
+** Installing and Using
 
 Just copy the ~bsp~ file over, and run: ~bsp yourshellscript.sh~.
 

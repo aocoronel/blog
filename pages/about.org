@@ -2,9 +2,11 @@
 
 ** $ whoami
 
-I'm a programmer by hobby, who writes CLIs for Linux. I love to try either old or new technologies.
+I like to talk about programming and software.
 
-I like to talk about Linux, programming and software.
+I don't have any computer science degree, neither any certification, although I use systems programming languages like C and Odin.
+
+Programming isn't my main thing, but the sole purpose of my digital identity is to be around tech.
 
 ** The Blog
 
@@ -16,27 +18,42 @@ However, I'll try to provide references to the knowledge I got, so you can take 
 
 Why write a blog? It serves as a reflection, allows me to broaden my view about things, and usually I find new pathways by writing.
 
-The blog design has been made by me, and is powered by `pandoc`, the tool I use to convert markdown to HTML. This blog doesn't uses JavaScript, and has been made with simplicity in mind.
+And, of course, the blog main topic is programming, although sometimes I deviate.
+
+The blog design has been made by me, and is powered by ~emacs~, which I use to convert org-mode to HTML. This blog doesn't uses JavaScript, thus can be viewed in any web browser that doesn't support CSS, neither JS.
+
+I also provide a [[./feed.xml]] file for your preferred RSS Feed client.
 
 ** Philosophies
 
-The minimalism is something I find out to be the way. It just feels right anywhere you apply it, but nothing too extreme. I would rather say simplicity is the key, since minimalism is something very subjective. But, of course, there is no right way of doing anything.
+The minimalism is something I find out to be the way. It just feels right anywhere you apply it, but nothing too extreme. I would rather say simplicity is the way, since minimalism is something very subjective. But, of course, there is no right way of doing anything, it's just that it brings me to a state of boredoom faster.
 
 I praise many extensible tools, because they are not complete. By that, I mean there is no museum to walk through. You build your own museum by extending them to fit your needs. In other words, it's an incentive to creation.
 
-I'm not shackled by social media, doom scrolling or by algorithm suggestions, but not immune (sometimes I find gold mines). I simply consume what I intend to. I'm free from the very known villain called smartphone. It's my tool, and not the opposite.
+I'm not shackled by social media, doom scrolling or by algorithm suggestions, but not immune (sometimes I find gold mines). I simply consume what I intend to. I'm free from the very known villain called smartphone. It's my tool, and not the opposite. And I'm gonna tell you something cool: I do most of my programming in my phone using Termux, and enjoying my emails, RSS feeds and nice text editor called ~emacs~ in it.
 
 I believe knowledge should be accessible to all. That's why this blog will never serve contents behind a paywall.
 
-** My Work
+** My digital work
 
-I write scripts, programs and libraries with emphasis in simplicity and clarity.
+I write scripts, programs and libraries with emphasis in simplicity, extensibility and clarity.
 
 I've written several personal scripts, which some I've expanded for a general usage. I've written many cheap and simple alternatives to other tools that does the same thing.
 
-Most of my work goes around task automation, which is powered by languages like C and Shell, mostly, and other niche projects written in Rust, Python and Go.
+Most of my work goes around task automation, which is powered by languages like C, Odin and Shell, mostly, and other niche projects written in Rust, Python and Go.
 
 My projects have a pattern. They offer you freedom so you can use them the way you want. And also decentralized, so you are not locked in to services and subscriptions. I've written all for personal use, and if you ever got a benefited by using them, let me know!
+
+** My style
+
+If you read any of my libraries, you noticed I don't write high level APIs, for a couple of reasons:
+
+- I believe my users know as much as me, if not more than me.
+- Making it general purpose, sometimes requires to set a standard or convention, and enforce it onto the users. The will of the user is more important, and they should be able to achieve their goals, thus the library limitations must not carry over.
+
+But it doesn't mean I can't provide a opt-in high level API for convenience.
+
+I'm also very picky about the design of a library, and its performance. Sometimes, I fail to reach my own quality standards, and I complain my own stuff is bad.
 
 ** AI
 
@@ -54,11 +71,13 @@ Having that said, I believe creative work should be original, written, drawn and
 
 Currently I do not. This may or may not change in the future.
 
-The major problem of having social media, is that there are many platforms. Then, trying to stay tuned with all is extremely exhaustive.
+The major problem of having social media, is that there are many platforms. Then, trying to stay tuned with all is extremely exhaustive. But if the goal is to share something, here's my blog!
 
 *Do you vibe code?*
 
-Yes, and no. I do usually ask AI to teach me how to do something, and I take the rest. Usually through Chatbots, and not by an agent.
+Yes, and no. I do usually ask AI to teach me how to do something, and I take the rest. Usually through chatbots, and not by an agent.
+
+I only recurr to AI when I need to search, or find nasty stupid bugs, like breaking out of a loop at the wrong time, because the conditional was always true...
 
 *Why write CLIs?*
 

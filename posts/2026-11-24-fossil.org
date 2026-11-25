@@ -1,0 +1,81 @@
+#+title: Fossil SCM
+#+description: An alternative to git
+#+date: 2026-11-24
+
+I was writing a ~style.org~ file, to note down my style, or how I usually do things. And in the very beginning I was thinking about my writing style, both to other people to read and for myself. Interestingly my personal notes are very weird, from a third perspective, because they lack many connectives that makes sentences make sense. This is because, I can read and write my notes faster.
+
+But then I started to thinking it deeper, and I realized that my notes have a very inconsistent styling, and the most inconsistent ones are the ones I remember better. Then I started to think the idea of putting more diagrams into my notes, and ended up finding a tool called [[https://pikchr.org/home/doc/trunk/homepage.md][Pikchr]], which is very human-readable, made to write diagrams in a syntax that can be understood by "people not yet born". And it's not just simple, but very powerful, give a look at the examples page from their homepage. I kept digging more about the project and the Pikchr creator is also the creator of [[https://fossil-scm.org/home/tree][Fossil SCM]] and [[https://sqlite.org/index.html][SQLite]]. Then just for the sake of trying things out I downloaded fossil and started to play with this VCS.
+
+#+BEGIN_QUOTE
+Honestly, I already tried fossil before, but never really understood it properly.
+#+END_QUOTE
+
+It didn't took me much to really appreaciate this tool. I also ended up watching this entire [[https://www.youtube.com/watch?v=ghtpJnrdgbo][video]] by the creator himself.
+
+** Did I move away?
+
+Initially, I moved a few projects from git to fossil, to take a better taste on it. For that experience that took 2 weeks, I really appreciated fossil, and it made me open my eyes.
+
+1. git is overcomplicated.
+
+One thing I learned, is that git has an unneded staging area, which just happens to force you to ~git add~ every single file to be commited. It's an extra burden that must be wasted. And even when I use tools like [[https://magit.vc/][Magit]], it's painful.
+
+I know it, and other users do as well. And [[https://github.com/jj-vcs/jj][this]] project knows it as well.
+
+Another complication is that committing may perform forks, and they must be conciliated so you can merge. Fossil eliminates this pain, by always pulling before performing a commit.
+
+The git workflow: git add README.md foo.c bar.c baz.c, git commit, git push
+
+In fossil it's as simple as: fossil addremove (adds untracked files), fossil commit
+
+And when you have already added a file in fossil, the modifications don't require extra fossil addremove.
+
+If you tolerate Rust, you can use JJ, which lets you work with git just like that, but not exactly like fossil does.
+
+3. git commits are a lie.
+
+One of the meanings of "commit" is: "To consign for future use or for preservation". And this is what commit means in the context of git, however git easily, and very easily, lets you modify history. And in fact, I have the POOR habit of changing the history in some of my projects.
+
+4. git is bloat.
+
+#+begin_src bash
+  # Void Linux
+  ❯ xbps-query -Rf git | wc -l
+  318
+  ❯ xbps-query -Rf fossil | wc -l
+  3
+#+end_src
+
+Git is split into several executables, which makes it very hard plug and play. And currently it's still much better than what is to come, because in a not so distant future git will be Rust project, rather than C. This is also why I don't even bother trying VCS like Pijul or JJ, because they have 400+ dependencies from ~crates.io~. Even projects of the size of raylib, have around 4 dependencies, which is managable. Now imagine having a project which depends on 400+ dependencies... cough cough, [[https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/][Supply chain attack on arrayref]]. And the worst, is that many of such crates are low effort to implement directly. I honestly don't get the rustacean mentality on "Bob invented the glass bubble, and there is a high chance Bob puts a lot of effort on having the best glass bubble anyway, so let's never bother reinvent it.".
+
+5. self-hosting git
+
+We can do it in several ways, and all the several ways involves installing extra software that most of the time are not plug and play as well.
+
+Personally I only care that I can push my commits over SSH to different machines, and fossil can do that to, but it can do much more.
+
+Fossil comes with a whole powerful UI, that I can take a bold move and say it's better than GitHub. Such UI can be locally served, or you can serve the fossil server, so you get a project like the Fossil home itself.
+
+** Git or Fossil?
+
+The old style I had on working with git was that all my commits are pushed to GitHub, and then like pull in a different device. This way I achieve syncing.
+
+My new workflow involves using my phone, which is ON most of the time, and which I can use it as a free VPS. Then using the VCS to commit and push the changes to my phone, and from my phone they are pushed to GitHub. I did this with fossil, but then I moved this workflow back to git.
+
+Kind of the problem I have is because I'm using fossil as my version control system. It's not easy to know what's going to be the collaboration methodology I can use, to accept work from outsiders who want to contribute to the project, because yeah, I can't just open a port in my phone! And I currently can't afford a real VPS to host my projects.
+
+But honestly, over the course of one year, I pretty much never got any single contribution anyway. So it doesn't really matter to me to accept contribution from external people because I'm pretty much developed them for myself and I expect myself to find the bugs and then to fix them manually by hand.
+
+But by the end of the day, I just wanted a setup that just works fine for me as a solo developer that bakes things for myself. And basically, I just needs to base myself on tools that are tiny and easy to maintain, like fossil, which is pretty much maintained by a single person over 15 years. And the creator himself noted that he was developing and working in fossil until git gets better than fossil, so he could move all his fossil projects to git, but he continued to work on fossil, and the time where git got better than fossil never came. This is mentioned in the video I linked, from 11 years ago. It has been 11 years when he said that, and even this year fossil is still getting new releases.
+
+But why didn't I stick with fossil, if I consider it to be better? Fossil is barely used, and there is no hosting services in 2026 (Chisel is dead) for it. Also, exporting a fossil project to git takes some core features of Fossil away, and they aren't fast if the project is large, specially if you try to achieve bi-directional syncing between git and fossil, which is possible.
+
+Besides that, I learned a lot from using fossil, and there are a couple of features and workflow that I'm trying to bring to my git workflow, such as trying to skip the staging area, and pulling before commiting to avoid unnecessary forks (sometimes it happens, when I work alone from different devices).
+
+But most importantly, I push my changes to my free VPS (my phone) first, than to the hosting platform. I could always have done that, but I only realized it after playing with fossil.
+
+** Closing
+
+Fossil is fantastic piece of software. I do really recommend you to try it out, at least to learn new things. If I could self-host a Gitea/Forgejo server, I would rather do a fossil server.
+
+Currently, I use git and host my projects in GitHub, and everything that is private is a fossil repo.
